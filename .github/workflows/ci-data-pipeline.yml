@@ -33,6 +33,6 @@ jobs:
 
       - name: PEP8 lint (flake8)
         run: flake8 lambda tests --max-line-length=100 --exclude=__pycache__
-
+        
       - name: Unit tests (pytest)
         run: pytest tests/ -v

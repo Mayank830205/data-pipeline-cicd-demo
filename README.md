@@ -2,12 +2,9 @@
 
 ETL Lambda (S3 → DynamoDB) with GitHub Actions CI and AWS CodePipeline CD.
 
-## Quick start
-
-1. Read **[SETUP-WALKTHROUGH.md](SETUP-WALKTHROUGH.md)**
-2. Set environment variables (`AWS_REGION`, `GITHUB_USER`, etc.)
-3. Push code → verify GitHub Actions CI
-4. Run `./scripts/setup-aws.sh` → authorize GitHub connection → trigger pipeline
+**Setup guides:**
+- **[SETUP-WALKTHROUGH.md](SETUP-WALKTHROUGH.md)** — Console + GitHub (7 steps)
+- **[SETUP-WALKTHROUGH-CLI.md](SETUP-WALKTHROUGH-CLI.md)** — AWS CLI (install → CodePipeline)
 
 ## Repo structure
 
@@ -16,8 +13,8 @@ ETL Lambda (S3 → DynamoDB) with GitHub Actions CI and AWS CodePipeline CD.
 buildspec.yml                            # CD: CodeBuild steps
 lambda/etl_customer/                     # Lambda source
 tests/                                   # Unit tests
-infra/                                   # IAM + CodePipeline templates (__PLACEHOLDERS__)
-scripts/setup-aws.sh                     # One-command AWS provisioning
+infra/                                   # IAM + CodePipeline templates
+scripts/                                 # Optional CLI setup
 ```
 
 ## Architecture
